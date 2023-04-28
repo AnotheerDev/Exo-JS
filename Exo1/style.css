@@ -1,0 +1,15 @@
+#board{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(154, 154, 248);
+    font-size: 4em;
+    text-align: center;
+    margin: 5px;
+    color: rgb(26, 87, 87);
+    line-height: 200px;
+}
