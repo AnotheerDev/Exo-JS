@@ -14,6 +14,25 @@
 
         <script>
 
+            let player = "X";
+
+            function afficherXO(event) {
+            const cell = event.target;
+
+            // Vérifier si la case n'a pas encore été cliquée
+                if (!cell.classList.contains("clicked")) {
+                    // Afficher le joueur actuel ('X' ou 'O')
+                    cell.textContent = player;
+                    // Ajouter la classe "clicked" pour indiquer que la case a été touchée
+                    cell.classList.add("clicked");
+                    // Alterner entre 'X' et 'O' à chaque tour
+                    player = (player === "X") ? "O" : "X" ;
+                }
+            }
+
+
+
+
             const box = document.createElement("div")
             box.classList.add("box")
 
@@ -25,6 +44,9 @@
                 board.appendChild(newbox)
             }
 
+            
+            const boxes = document.querySelectorAll(".box");
+            boxes.forEach(box => box.addEventListener("click", afficherXO));
         </script>
     </body>
 </html>
