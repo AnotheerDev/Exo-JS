@@ -27,3 +27,17 @@
     background-color: rgb(12, 58, 111);
     color: white;
 }
+
+#turnMessage{
+    padding: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#reload{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+}
