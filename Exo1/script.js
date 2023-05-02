@@ -1,13 +1,13 @@
 function afficherInfoAlert(){
-    alert("Class : carre\n" +
-    "-Background color : osef\n" +
-    "-Color : osef\n" +
-    "-Height : osef\n" +
-    "-Widht : osef\n" +
-    "-Display : a ton avis ?\n" +
-    '-Display : "Time New Roman (40px)"\n'
-    );
-}
+    var element = document.getElementById("box");
+    var style = window.getComputedStyle(box);
+    var width = style.getPropertyValue("width");
+    var height = style.getPropertyValue("height");
+    var display = style.getPropertyValue("display");
+    var color = style.getPropertyValue("color");
+    alert( "width : " + width + "\n" + "height : " + height + "\n" + "display : " + display + "\n" + "color : " + color + "\n");
+
+  }
 
 const box = document.createElement("div")
 box.classList.add("box")
